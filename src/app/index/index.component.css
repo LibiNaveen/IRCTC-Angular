@@ -1,0 +1,56 @@
+#booking{
+    background: url("../../assets/images/train.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 150px;
+    
+    
+}
+#booking #rightSideContent{
+    color: white;
+}
+#booking #rightSideContent h1{
+    font-weight: bold;
+    
+}
+#booking #footer{
+    font-size: small;
+    font-weight: bold;
+}
+#bookingForm{
+    background-color: white;
+}
+#bookingBtn button{
+    background-color: #213D77;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    letter-spacing: 2px;
+   
+}
+#bookingForm #header1 h2{
+   color: #213D77;
+   font-weight: bold;
+   padding-top: 10px;
+   
+}
+
+.form-floating, .form-select{
+    position: relative;
+    left: 20px; 
+}
+.form-floating i, .form-select i{
+    position: absolute;
+    top: calc(50%);
+    left:10px;
+}
+
+.form-floating label{
+    left: 20px;
+    padding-left: 20px;
+
+}
+.form-floating .form-control{
+    left: 20px;
+    padding-left: 40px;
+}

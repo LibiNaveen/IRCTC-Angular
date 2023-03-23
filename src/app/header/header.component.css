@@ -1,0 +1,27 @@
+marquee{
+    background-color: #213D77;
+    color: #DEDEDE;
+}
+#header{
+   
+    height: 100px;
+}
+
+#nav-header{
+    font-size: 11px;
+    display: flex;
+    font-weight: 500;
+   
+}
+#button{
+    background-color:#213D77 ;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+}
+#button1{
+    background-color:#DEDEDE ;
+    font-weight: 700;
+    font-size: 12px;
+   
+}

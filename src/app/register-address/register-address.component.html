@@ -1,0 +1,75 @@
+<div id="A-detailsPage">
+    <form action="#" class="form">
+    <div class="row mt-4">
+        <div class="col-md-6 mt-4">
+            <input class="form-control" type="text" placeholder="Foolr/Door/Block No.">
+        </div>
+        <div class="col-md-6 mt-4">
+            <input class="form-control" type="text" placeholder="Street/Lane (Optinal)">
+        </div>
+        <div class="col-md-6 mt-4">
+            <input class="form-control" type="text" placeholder="Area/Locality (Optinal)">
+        </div>
+        <div class="col-md-6 mt-4">
+            <input class="form-control" type="text" placeholder="Pin code">
+        </div>
+        <div class="col-md-6 mt-4">
+            <input class="form-control" type="text" placeholder="State">
+        </div>
+        <div class="col-md-6 mt-4" >
+            <select class="form-select" >
+                <option value="c-1">Select City</option>
+                <option value="c-2">Srilanka</option>
+                <option value="c-3">Iceland</option>
+                <option value="c-4">America</option>
+                <option value="c-5">Hungary</option>
+                <option value="c-6">Chaina</option>
+                <option value="c-7">Japan</option>
+                <option value="c-8">Pakistan</option>
+            </select>
+        </div>
+        <div class="col-md-6 mt-4" >
+            <select class="form-select" >
+                <option value="po">Select a Post Office</option>
+            </select>
+        </div>
+        <div class="col-md-6 mt-4">
+            <input class="form-control" type="text" placeholder="Phone">
+        </div>
+        <div class="col-md-6 form-check mt-4">
+            <p class="text">Copy Residence to Office Address</p>
+            <div class="row">
+            <div class="col-md-auto px-5">
+            <input type="radio" class="form-check-input" placeholder=""> Yes
+            </div>
+            <div class="col-md-auto " >
+            <input type="radio" class="form-check-input" placeholder=""> No 
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4 px-4">
+        <div class="form-check">
+        <input type="checkbox" class="form-check-input" checked>
+        <label for="" class="form-check-label">Please inform me about IRCTC co-branded credit card through Phone/Email/SMS(Optional)</label>
+    </div></div>
+    <div class="row mt-4 ">
+        <p class="text">Book free Railway tickets using Reward Points and Enjoy Zero payment gateway charge with IRCTC SBI Card</p>
+    </div>
+    <div class="row">
+    <canvas id="captcha" onload="capGenerate()">captcha text</canvas>
+            <input id="textBox" class="form-control" type="text" name="text" placeholder="Enter Captcha">
+            <p id="key"></p>
+    </div>
+    <div class="row mt-4 px-4">
+        <div class="form-check">
+        <input type="checkbox" class="form-check-input">
+        <label for="" class="form-check-label">I have read and agree with the <a href="https://contents.irctc.co.in/en/Terms%20and%20conditions.pdf">Terms and Conditions</a> and also agree to receive promotional Emails/SMS/WhatsApp/Alerts/offers/announcements from IRCTC & associated partners.</label>
+    </div></div>
+    <div class="row mt-5 px-1">
+        <div class="col-md-6 d-flex justify-content-start"><button class="btn" id="basCancelBtn">Cancel</button></div>
+        <div class="col-md-6 d-flex justify-content-end"><button class="btn" id="basContBtn">REGISTER<i class="fa-solid fa-arrow-right fa-lg px-1"></i></button></div>
+        
+    </div>
+</form>
+</div>

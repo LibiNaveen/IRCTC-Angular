@@ -1,0 +1,223 @@
+<app-header></app-header>
+<app-modify-booking-form></app-modify-booking-form>
+
+<div class="row" id="trains">
+    
+    <div class="col-md-10">
+        <div id="innerHeader">
+        <div class="row">
+            <p class="text" >3 Results for <span id="fromPlace"></span><i class="fa-solid fa-arrow-right fa-lg px-1"></i> <span id="toPlace"></span> | <span id="chooseDate"></span>For Quota | <span id="quota"></span> </p>
+        </div>
+        <div class="row ">
+            <div class="col-md-6 ">
+                <button class="btn" id="btn-SD">Sort By | Duration</button>
+                <button class="btn" id="btn-SAT">Show Available Trains</button>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-end">
+                <button class="btn mx-2" id="btn-PD"><i class="fa-solid fa-less-than"></i>Previous Day</button>
+                <button class="btn" id="btn-ND"> Next Day<i class="fa-solid fa-greater-than"></i></button>
+            </div></div></div>
+        </div>
+        <div class="row mt-4 " id="trainDetails">
+            <div class="row" id="row1">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-start ">
+                        <h5>ABC SF EXP</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center">
+                        <p>Runs On: <b>M T W T F S S</b></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-end">
+                        <p class="text-primary "><b>Train Schedule</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 mx-2">
+                <div class="col-md-auto">
+                    <div class="d-flex justify-content-start">
+                        <div><h4>09:30|</h4>&nbsp;<span id="fromPlace"></span>|<span id="dayDate"></span></div>
+                    </div>
+                </div>
+                <div class="col-md-auto">
+                    <div class="d-flex justify-content-center">
+                        <p>_____03:00_____</p>
+                    </div>
+                </div>
+                <div class="col-md-auto">
+                    <div class="d-flex justify-content-end">
+                        <div><h4>12:30|</h4>&nbsp;<span id="toPlace"></span>|<span id="dayDate"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 mx-2" id="coaches">
+                <div class="col-md-auto" id="aval-coaches">
+                    <div>
+                        <h6>Sleeper (SL)</h6>
+                        <p>Refresh<i class="fa-solid fa-rotate-right"></i></p>
+                    </div>
+                </div>
+                <div class="col-md-auto" id="aval-coaches">
+                    <div>
+                        <h6>AC 3 Tier (3A)</h6>
+                        <p>Refresh<i class="fa-solid fa-rotate-right"></i></p>
+                    </div>
+                </div>
+                <div class="col-md-auto" id="aval-coaches">
+                    <div >
+                        <h6>AC 2 Tier (2A)</h6>
+                        <p>Refresh<i class="fa-solid fa-rotate-right"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3 mx-2" id="btn">
+                <div class="col-sm-auto">
+                <button class="btn" id="BN">Book Now</button> <span id="price"></span>
+                </div>
+
+                <div class="col-sm-auto">  
+                <button class="btn " id="OD">OTHER DATES</button>
+                </div>
+            </div>
+            </div>
+            <!-- train opt 2 -->
+            <div class="row mt-4 " id="trainDetails">
+            <div class="row" id="row2">
+            <div class="col-md-4">
+                <div class="d-flex justify-content-start">
+                    <h5>SM MAIL SF EXP</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-center">
+                    <p>Runs On: <b>M</b> T W T F <b>S</b> S</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-end">
+                    <p class="text-primary "><b>Train Schedule</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mx-2">
+            <div class="col-md-auto">
+                <div class="d-flex justify-content-start">
+                    <div><h4>12:05|</h4>&nbsp;<span id="fromPlace"></span>|<span id="dayDate"></span></div>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="d-flex justify-content-center">
+                    <p>_____02:55_____</p>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="d-flex justify-content-end">
+                    <div><h4>15:00|</h4>&nbsp;<span id="toplace"></span>|<span id="dayDate"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mx-2" id="coaches">
+            <div class="col-md-auto" id="aval-coaches">
+                <div>
+                    <h6>Sleeper (SL)</h6>
+                    <p>Refresh<i class="fa-solid fa-rotate-right"></i></p>
+                </div>
+            </div>
+            <div class="col-md-auto" id="aval-coaches">
+                <div>
+                    <h6>AC 3 Tier (3A)</h6>
+                    <p>Refresh<i class="fa-solid fa-rotate-right"></i></p>
+                </div>
+            </div>
+            <div class="col-md-auto" id="aval-coaches">
+                <div >
+                    <h6>AC 2 Tier (2A)</h6>
+                    <p>Refresh<i class="fa-solid fa-rotate-right"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="row my-3 mx-2" id="btn">
+            <div class="col-sm-auto">
+            <button class="btn" id="BN">Book Now</button>
+            </div>
+            <div class="col-sm-auto">  
+            <button class="btn " id="OD">OTHER DATES</button>
+            </div>
+
+        </div>
+        </div>
+        <!-- train opt 3 -->
+        <div class="row mt-4 " id="trainDetails">
+        <div class="row" id="row3">
+        <div class="col-md-4">
+            <div class="d-flex justify-content-start">
+                <h5>XYZ EXP</h5>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="d-flex justify-content-center">
+                <p>Runs On: <b>M T W T F S S</b></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="d-flex justify-content-end">
+                <p class="text-primary"><b>Train Schedule</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3 mx-2">
+        <div class="col-md-auto">
+            <div class="d-flex justify-content-start">
+                <div><h4>16:25|</h4><span id="fromPlace"></span>|<span id="toPlace"></span></div>
+            </div>
+        </div>
+        <div class="col-md-auto">
+            <div class="d-flex justify-content-center">
+                <p>_____03:20_____</p>
+            </div>
+        </div>
+        <div class="col-md-auto">
+            <div class="d-flex justify-content-end">
+                <div><h4>19:45|</h4><span id="toPlace"></span>|<span id="dayDate"></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3 mx-2" id="coaches">
+        <div class="col-md-auto" id="aval-coaches">
+            <div>
+                <h6>Sleeper (SL)</h6>
+                <p>Refresh<i class="fa-solid fa-rotate-right"></i></p>
+            </div>
+        </div>
+        <div class="col-md-auto" id="aval-coaches">
+            <div>
+                <h6>AC 3 Tier (3A)</h6>
+                <p>Refresh<i class="fa-solid fa-rotate-right"></i></p>
+            </div>
+        </div>
+        <div class="col-md-auto" id="aval-coaches">
+            <div >
+                <h6>AC 2 Tier (2A)</h6>
+                <p>Refresh<i class="fa-solid fa-rotate-right"></i></p>
+            </div>
+        </div>
+    </div>
+    <div class="row my-3 mx-2" id="btn">
+        <div class="col-sm-auto">
+        <button class="btn" id="BN">Book Now</button>
+        </div>
+        <div class="col-sm-auto">  
+        <button class="btn " id="OD">OTHER DATES</button>
+        </div>
+    </div>
+
+    </div>
+
+      
+    </div>
+
+<app-footer-contact></app-footer-contact>

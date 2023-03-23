@@ -1,0 +1,14 @@
+#modifySearch{
+    background-color: #213D77 ;
+}
+#modifySearch  .form .form-control{
+    border-radius: 0px;
+    outline: 0px;
+}
+#m-search{
+    background-color: #FB792B;
+}
+#modifySearch #c-box{
+    color: white;
+    font-weight: bold;
+}
