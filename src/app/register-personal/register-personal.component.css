@@ -1,0 +1,38 @@
+#p-detailsPage{
+    margin-top: 30px;
+}
+
+#regBasic input{
+    box-shadow: none;
+    border-color: rgb(226, 221, 221);
+}
+#regBasic input::placeholder{
+    color: #213D77;
+    font-size: small;
+    font-weight: bold;
+}
+#basContBtn{
+    background-color: #FB792B;
+    color: white;
+    width: 130px;
+    height: 45px;
+    font-size: medium;
+    font-weight: bold;
+}
+#regBasic select[aria-placeholder]{
+    color: #213D77;
+    font-size: small;
+    font-weight: bold;
+}
+#basCancelBtn{
+    border: 2px solid rgb(226, 221, 221);
+    width: 100px;
+    height: 45px;
+    font-size: medium;
+    font-weight: 500;
+}
+#basCancelBtn:hover{
+    border: 2px solid #FB792B;
+    background-color: #E6E6E6;
+    
+}

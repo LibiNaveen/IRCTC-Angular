@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<div class="container-fluid m-1 px-2" id="regCon">
+    <!-- <h3 class="d-flex justify-content-center">Register</h3> -->
+    <div class="row m-3 p-5">
+    <div class="row p-1" id="regHeader">
+        <div class="col-md-6 d-flex justify-content-start"><h3>Create Your Account</h3></div>
+        <div class="col-md-6 d-flex justify-content-end"><small>If you already have an account, please</small> &nbsp; <a routerLink="/login">SIGN IN</a></div>
+    </div>
+    <div class="row" id="regBtn">
+        <div class="col-md-4"> <button class="btn p-2" id="b-details" (click)="getPage(0)" > Basic Details </button></div>
+        <div class="col-md-4"><button  class="btn p-2" id="p-details" (click)="getPage(1)">Personal Details</button></div>
+        <div class="col-md-3"><button  class="btn p-2" id="A-details" (click)="getPage(2)">Address</button></div>
+       
+    </div>
+    <div> <app-register-basic *ngIf=" tabIndex === 0"></app-register-basic>
+        <app-register-personal *ngIf=" tabIndex === 1"></app-register-personal>
+        <app-register-address *ngIf=" tabIndex === 2"></app-register-address>
+    </div>
+
+    </div>
+    
+
+    <app-footer-contact></app-footer-contact>

@@ -1,0 +1,55 @@
+<div id="keerthi">
+<div class="container">
+    <h3 class="d-flex justify-content-center">LOGIN</h3>
+<div>
+<form class="form" onload="capGenerate()">
+    <input type="text" class="form-control mt-2" placeholder="Username">
+    <input type="text" class="form-control" placeholder="password">
+    <p class="mt-3">FORGET ACCOUNT DETAILS?</p>
+    <canvas id="captcha"  >{{captcha}}</canvas>
+        <input id="textBox" class="form-control" type="text" name="text" placeholder="Enter Captcha">
+        <p id="key"></p>
+    <input class="input-check font-size-small" type="checkbox"> 
+        <label class="input-label">  Login & Booking with OTP</label> <br>
+    <button class="btn my-2 " id="signIn" type="submit" (click)="onSubmit()">SIGN IN</button>
+</form>
+</div>
+<div class="row d-flex justify-content-around align-items-center" id="footer">
+    <div class="col-md-6 ">
+        <button class="btn ">REGISTER</button>
+    </div>
+    <div class="col-md-6">
+        <button class="btn ">AGENT LOGIN</button>
+    </div>
+</div>
+</div>
+</div>
+
+<script>
+//     let captcha;
+// function capGenerate(){
+//     captcha=document.getElementById("captcha");
+//     let uniqueCaptcha=" ";
+//     let character="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwx1234567890";
+
+//     for(let i=0;i<=5;i++){
+//         uniqueCaptcha += character.charAt(Math.random() * character.length)
+//     }
+
+//     captcha.innerHTML = uniqueCaptcha;
+// }
+
+// function validateCaptcha(){
+//     let userInput= document.getElementById("textBox").value;
+
+//     if(userInput===captcha.innerHTML)
+//     {
+//         document.getElementById("key").innerHTML = "Matched"
+//         capGenerate();
+//     }
+//     else{
+//         document.getElementById("key").innerHTML = "Not Matched"
+//         capGenerate();
+//     }
+// }
+</script>

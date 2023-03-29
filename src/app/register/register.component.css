@@ -1,0 +1,40 @@
+*{
+    font-size: small;
+    font-weight: bold;
+} 
+#regHeader a{
+    color: #FB792B;  
+}
+h3{
+    font-size: large;
+    color: #2F4676;
+    padding-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #2F4676;
+    border-bottom-width: 3px;
+    
+}
+#regCon{
+    border: 2px solid #2F4676;
+    width: 99%;
+    margin-bottom: 20px;
+}
+#regBtn{
+    border-bottom: 1px solid rgb(226, 221, 221);
+    margin-top: 50px ;
+}
+#regBtn .btn{
+    font-weight: bold;
+    width: 200px;
+}
+#regBtn .btn:hover{
+    border: 1px solid #213D77;
+}
+#regBtn #b-details:active {
+    border-bottom: 3px solid #FB792B;
+    border-radius: 0px;
+}
+#regBtn .btn:focus{
+    border-bottom: 3px solid #FB792B;
+    border-radius: 0px;
+}

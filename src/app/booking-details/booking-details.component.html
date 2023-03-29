@@ -1,0 +1,233 @@
+<app-header></app-header>
+<app-modify-booking-form></app-modify-booking-form>
+
+<div class="row" id="trains">
+        <div id="innerHeader">
+        <div class="row">
+            <div id="result" >3 Results for <b><span id="fromPlace">{{fromPlace}}</span></b><i class="fa-solid fa-arrow-right fa-md px-1"></i><b><span id="toPlace">{{toPlace}}</span></b> &nbsp; | &nbsp; <b><span id="chooseDate"> {{date}} </span></b> &nbsp; For Quota | &nbsp; <span id="quota">{{general}}</span> </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-6 ">
+                <button class="btn" id="btn-SD">Sort By | Duration</button>
+                <button class="btn" id="btn-SAT">Show Available Trains</button>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-end">
+                <button class="btn mx-2" id="btn-PD"><i class="fa-solid fa-less-than"></i>Previous Day</button>
+                <button class="btn" id="btn-ND"> Next Day<i class="fa-solid fa-greater-than"></i></button>
+            </div></div></div>
+        </div>
+        <div class="row mt-4 " id="trainDetails">
+            <div class="row" id="row1">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-start ">
+                        <h5>ABC SF EXP</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-center">
+                        <p>Runs On: <b>M T W T F S S</b></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-end">
+                        <p class="text-primary "><b>Train Schedule</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 mx-2">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-start">
+                        <div><b><span>09:30</span>&nbsp;|&nbsp;<span id="fromPlace">{{fromPlace}}</span>&nbsp;|&nbsp;<span id="dayDate">{{date}}</span></b></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="d-flex justify-content-center">
+                        <p>_____03:00_____</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-end">
+                        <div><b><span>12:30</span>&nbsp;|&nbsp;<span id="toPlace">{{toPlace}}</span>&nbsp;|&nbsp;<span id="dayDate">{{date}}</span></b></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 mx-2" id="coaches">
+                <div class="col-md-auto" id="aval-coaches-1">
+                    <div>
+                        <h6>Sleeper (SL)</h6>
+                        <p style="color: green;">Available - <small >24</small></p>
+                    </div>
+                </div>
+                <div class="col-md-auto" id="aval-coaches-2">
+                    <div>
+                        <h6>AC 3 Tier (3A)</h6>
+                        <p style="color: red;">WL - <small >4</small></p>
+                    </div>
+                </div>
+                <div class="col-md-auto" id="aval-coaches-3">
+                    <div >
+                        <h6>AC 2 Tier (2A)</h6>
+                        <p style="color: green;">Available - <small>07</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3 mx-2" id = "btn">
+                <div class="col-sm-auto">
+                <a routerLink="/passDetail"><button class="btn" id="FBN">Book Now</button> <span id="price"></span></a>
+                </div>
+
+                <div class="col-sm-auto">  
+                <button class="btn " id="OD">OTHER DATES</button>
+                </div>
+            </div>
+            </div>
+            <!-- train opt 2 -->
+            <div class="row mt-4 " id="trainDetails">
+            <div class="row" id="row2">
+            <div class="col-md-4">
+                <div class="d-flex justify-content-start">
+                    <h5>SM MAIL SF EXP</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-center">
+                    <p>Runs On: <b>M</b> T W T F <b>S</b> S</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-end">
+                    <p class="text-primary "><b>Train Schedule</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mx-2">
+            <div class="col-md-auto">
+                <div class="d-flex justify-content-start">
+                    <div><b><span>12:05</span>&nbsp;|&nbsp;<span id="fromPlace">{{fromPlace}}</span>&nbsp;|&nbsp;<span id="dayDate">{{date}}</span></b></div>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="d-flex justify-content-center">
+                    <p>_____02:55_____</p>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="d-flex justify-content-end">
+                    <div><b><span>15:00</span>&nbsp;|&nbsp;<span id="toplace">{{toPlace}}</span>&nbsp;|&nbsp;<span id="dayDate">{{date}}</span></b></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mx-2" id="coaches">
+            <div class="col-md-auto" id="aval-coaches">
+                <div>
+                    <h6>Sleeper (SL)</h6>
+                    <p style="color: green;">Available - <small >02</small></p>
+                </div>
+            </div>
+            <div class="col-md-auto" id="aval-coaches">
+                <div>
+                    <h6>AC 3 Tier (3A)</h6>
+                    <p style="color: red;">WL - <small >24</small></p>
+                </div>
+            </div>
+            <div class="col-md-auto" id="aval-coaches">
+                <div >
+                    <h6>AC 2 Tier (2A)</h6>
+                    <p style="color: red;">WL - <small >18</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="row my-3 mx-2" id="btn">
+            <div class="col-sm-auto">
+            <a routerLink="/passDetail"><button class="btn" id="FBN">Book Now</button></a>
+            </div>
+            <div class="col-sm-auto">  
+            <button class="btn " id="OD">OTHER DATES</button>
+            </div>
+
+        </div>
+        </div>
+        <!-- train opt 3 -->
+        <div class="row mt-4 " id="trainDetails">
+        <div class="row" id="row3">
+        <div class="col-md-4">
+            <div class="d-flex justify-content-start">
+                <h5>XYZ EXP</h5>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="d-flex justify-content-center">
+                <p>Runs On: <b>M T W T F S S</b></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="d-flex justify-content-end">
+                <p class="text-primary"><b>Train Schedule</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3 mx-2">
+        <div class="col-md-auto">
+            <div class="d-flex justify-content-start">
+                <div><b><span>16:25</span>&nbsp;|&nbsp;<span id="fromPlace">{{fromPlace}}</span>&nbsp;|&nbsp;<span id="toPlace">{{date}}</span></b></div>
+            </div>
+        </div>
+        <div class="col-md-auto">
+            <div class="d-flex justify-content-center">
+                <p>_____03:20_____</p>
+            </div>
+        </div>
+        <div class="col-md-auto">
+            <div class="d-flex justify-content-end">
+                <div><b><span>19:45</span>&nbsp;|&nbsp;<span id="toPlace">{{toPlace}}</span>&nbsp;|&nbsp;<span id="dayDate">{{date}}</span></b></div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3 mx-2" id="coaches">
+        <div class="col-md-auto" id="aval-coaches-1">
+            <div>
+                <h6>Sleeper (SL)</h6>
+                <p>Refresh<i class="fa-solid fa-rotate-right"></i></p>
+            </div>
+        </div>
+        <div class="col-md-auto" id="aval-coaches">
+            <div>
+                <h6>AC 3 Tier (3A)</h6>
+                <p>Refresh<i class="fa-solid fa-rotate-right"></i></p>
+            </div>
+        </div>
+        <div class="col-md-auto" id="aval-coaches">
+            <div >
+                <h6>AC 2 Tier (2A)</h6>
+                <p>Refresh<i class="fa-solid fa-rotate-right"></i></p>
+            </div>
+        </div>
+    </div>
+    <div class="row my-3 mx-2" id="btn">
+        <div class="col-sm-auto">
+        <a routerLink="/passDetail"><button class="btn" id="BN">Book Now</button></a>
+        </div>
+        <div class="col-sm-auto">  
+        <button class="btn " id="OD">OTHER DATES</button>
+        </div>
+    </div>
+
+    </div>
+
+      
+    </div>
+
+
+  
+
+<app-footer-contact></app-footer-contact>
+
+<script>
+    // $(document).ready(function(){
+    //     $("#aval-coaches").click(function(){
+    //         $("#aval-coaches").css("border-color", "#blue")
+    //     })
+    // })
+
+</script>

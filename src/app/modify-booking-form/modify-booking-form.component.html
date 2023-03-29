@@ -1,0 +1,66 @@
+<div class="container-fluid">
+    <div class="row mt-3 mx-2" id="modifySearch">
+    <div class="form d-flex justify-content-center mt-4">
+        <div class="col-sm px-2">
+        <input class="form-control" [(ngModel)]="fromPlace" type="text" id="from1" [ngModelOptions]="{standalone:true}">
+    </div>
+        <div class="col-sm px-2">
+        <input class="form-control" [(ngModel)]="toPlace" type="text" id="to1" [ngModelOptions]="{standalone:true}">
+    </div>
+        <div class="col-sm px-2">
+        <input class="form-control" [(ngModel)]="date" type="date" id="dateANdTime1" [ngModelOptions]="{standalone:true}">
+    </div>
+    <div class="col-sm px-2">
+        <select class="form-select" id="select3" [(ngModel)]="general" [ngModelOptions]="{standalone:true}">
+            <option selected>GENERAL</option>
+            <option value="1">LADIES</option>
+            <option value="2">LOWER BIRTH/SR.CITIZEN</option>
+            <option value="3">PERSON WITH DISABILITY</option>
+            <option value="4">TATKAL</option>
+            <option value="5">PREMIUM TATKAL</option>
+        </select>
+    </div>
+    <div class="col-sm px-2">
+        <select class="form-select" id="select4" [(ngModel)]="classes" [ngModelOptions]="{standalone:true}">
+            <option selected>All Classes</option>
+            <option value="1">Anubhuti Class (EA)</option>
+            <option value="2">AC First Class (1A)</option>
+            <option value="3">Vistadome AC (EV)</option>
+            <option value="4">Exec. Chair Car (EC)</option>
+            <option value="5">AC 2 Tier (2A) </option>
+            <option value="6">First Class (FC) </option>
+            <option value="7">AC 3 Tier (3A) </option>
+            <option value="8">AC 3 Economy (3A) </option>
+            <option value="9">Vistadome Chair Car (VC) </option>
+            <option value="10">AC Chai Car (CC) </option>
+            <option value="11">Sleeper (SL) </option>
+            <option value="12">Vistadome Non AC (VS) </option>
+            <option value="13">Second Sitting (2S) </option>
+        </select>
+    </div>
+    <div class="col-sm ps-3">
+         <a [routerLink]="['bookBtn']"> <button class="btn btn-lg" id="m-search" onclick="modSearch()"  >Modify Search</button></a>
+    </div>
+    </div>
+    <div class="row mb-4" >
+        <div class="d-flex justify-content-center" id="c-box">
+            <div class="px-2">
+            <input type="checkbox">
+            <label for="form-label" [(ngModel)]="cb1" [ngModelOptions]="{standalone:true}">Person With Disability Concession</label>
+            </div>
+            <div class="px-2">
+            <input type="checkbox" class="px-3" [(ngModel)]="cb2" [ngModelOptions]="{standalone:true}">
+            <label for="form-label">Flexible With Date</label>
+            </div>
+            <div class="px-2">
+            <input type="checkbox" class="px-3" [(ngModel)]="cb3" [ngModelOptions]="{standalone:true}">
+            <label for="form-label">Train With Available berth</label>
+            </div>
+            <div class="px-2">
+            <input type="checkbox" class="px-3" [(ngModel)]="cb4" [ngModelOptions]="{standalone:true}">
+            <label for="form-label">Railway pass Concession</label>
+            </div>
+        </div>
+       
+    </div>
+</div>

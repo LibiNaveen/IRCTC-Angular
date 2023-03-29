@@ -1,0 +1,94 @@
+<app-header></app-header>
+
+<div class="row mt-3 " id="booking">
+    <div class="col-sm-6 py-5">
+        <div class="row g-1">
+            <div class="col-sm-6" id="bookingBtn"><button class="btn px-5"><i class="fa fa-light fa-clipboard-check fa-xl px-3"></i>PNR STATUS</button></div>
+            <div class="col-sm-6" id="bookingBtn"><button class="btn px-5 float-end"><i class="fa fa-light fa-clipboard-list-check fa-xl px-3"></i>CHARTS/VACANCY</button></div> 
+        </div>
+        <div class="container"  id="bookingForm" >
+            <div class="row pt-2" id="header1">
+                <div class="col-sm-3 " id="image1"> <img class="pt-1" src="../../assets/images/logo_top_eng.jpg" alt="logo"> </div>
+                <div class="col-sm-5"><h2 class="text-center">BOOK TICKET</h2></div>
+                <div class="col-sm-4" id="image2"> <img class="pt-2" src="../../assets/images/G20_Logo.png" alt="logo"> </div>
+            </div> 
+        <form #travelDetails="ngForm" (onSubmit)="travelDetails">    
+        <div class="container row">
+        <div class="col-md-6 pt-3">
+            <div class="form-floating my-3">
+                <i class="fa-sharp fa-solid fa-location-arrow fa-lg"></i>
+                <input class="form-control" type="text" id="from" [(ngModel)]="fromPlace"  name = "from" placeholder="From">
+                <label for="floatingName">From</label>
+            </div>
+            <div class="form-floating">
+                <i class="fa-solid fa-location-dot fa-lg"></i>
+                <input class="form-control" type="text" id="to" placeholder="To"  [(ngModel)]="toPlace" name = "to" >
+                <label for="floatingName">To</label>
+            </div>
+            <select class="form-select my-3" [(ngModel)]="general" style="font-size: small;" id="select1" name = "general">
+                <i class="fa-solid fa-grid-2 fa-lg"></i>
+                <option selected>GENERAL</option>
+                <option value="1">LADIES</option>
+                <option value="2">LOWER BIRTH/SR.CITIZEN</option>
+                <option value="3">PERSON WITH DISABILITY</option>
+                <option value="4">TATKAL</option>
+                <option value="5">PREMIUM TATKAL</option>
+              </select>
+        </div>
+        <div class="col-md-6 mt-3 pt-3">
+            <div class="form-floating" id="date">
+                <i class="fa-regular fa-calendar-days fa-lg"></i>
+                <input class="form-control" [(ngModel)]="date" type="date" id="dateAndTime" placeholder="DD/MM/YYYY"  name = "date">
+                <label for="floatingName">DD/MM/YYYY</label>
+            </div>
+            <select class="form-select my-3"  [(ngModel)]="classes" style="font-size: small;" id="select2" name = "classes">
+                <i class="fa-solid fa-briefcase fa-lg"></i>
+                <option selected>All Classes</option>
+                <option value="1">Anubhuti Class (EA)</option>
+                <option value="2">AC First Class (1A)</option>
+                <option value="3">Vistadome AC (EV)</option>
+                <option value="4">Exec. Chair Car (EC)</option>
+                <option value="5">AC 2 Tier (2A) </option>
+                <option value="6">First Class (FC) </option>
+                <option value="7">AC 3 Tier (3A) </option>
+                <option value="8">AC 3 Economy (3A) </option>
+                <option value="9">Vistadome Chair Car (VC) </option>
+                <option value="10">AC Chai Car (CC) </option>
+                <option value="11">Sleeper (SL) </option>
+                <option value="12">Vistadome Non AC (VS) </option>
+                <option value="13">Second Sitting (2S) </option>
+
+              </select>
+        </div>
+    </div>
+</form>
+            
+    
+        <div class="input-check container row g-1 mt-4 ms-3" id="footer">
+            <div class="col-md-6">
+                <input type="checkbox"  [(ngModel)]="cb1" name="cb1">Person With Disability Concession
+            </div>
+            <div class="col-md-6">
+                <input type="checkbox"  [(ngModel)]="cb2" name = "cb2">Flexible With Date
+            </div>
+            <div class="col-md-6">
+                <input type="checkbox"  [(ngModel)]="cb3" name = "cb3">Train With Available berth
+            </div>
+            <div class="col-md-6">
+                <input type="checkbox"  [(ngModel)]="cb4" name = "cb4">Railway pass Concession
+            </div>
+        </div>
+           <a routerLink="/bookBtn"> <button class="btn text-white my-4 ms-3" style="background-color:#FB792B ;" (click)="passDetails()" >search</button> </a>
+        </div>
+    </div>
+        <div class="container col-sm-6 d-flex justify-content-center align-items-center">
+            <div class="text-center" id="rightSideContent"><h1>INDIAN RAILWAYS</h1>
+            <h5 >Safety <i class="fa-thin fa-pipe"></i> Security <i class="fa-thin fa-pipe"></i> Punctuality<i class="fa-thin fa-pipe"></i></h5>
+            </div>
+        </div>   
+</div>
+
+
+
+<app-footer-contact></app-footer-contact>
+

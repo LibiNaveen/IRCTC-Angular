@@ -1,0 +1,89 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+<div id="trndetInPassDet">
+<div class="row mt-3 mx-2">
+    <div class="col-md-4">
+        <div class="d-flex justify-content-start">
+            <div><b><span>09:30</span>&nbsp;|&nbsp;<span id="fromPlace">{{fromPlace}}</span>&nbsp;|&nbsp;<span id="dayDate">{{date}}</span></b></div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="d-flex justify-content-center">
+            <p>_____03:00_____</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="d-flex justify-content-end">
+            <div><b><span>12:30</span>&nbsp;|&nbsp;<span id="toPlace">{{toPlace}}</span>&nbsp;|&nbsp;<span id="dayDate">{{date}}</span></b></div>
+        </div>
+    </div>
+</div>
+<div class="row mt-3 ">
+   <small> {{classes}}|{{general}}</small>
+</div>
+</div>
+
+<div class="row mt-3  mx-2" id="passDet">
+    <h5 >Passenger Details</h5>
+    <div class="row mt-3" *ngFor="let item of passengerForm" >
+        <form>
+            <input class="me-3" [(ngModel)]="item.name" name="name" type="text" placeholder="Passenger Name">
+            <input class="me-3" [(ngModel)]="item.age" type="text" name="age"  placeholder="Age"> 
+            <select type="select" class="me-3" name="gender" [(ngModel)]="item.gender"  id="select1" name = "general" placeholder="Gender">
+                <option selected>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Transgender</option>
+            </select>
+            <select type="select" class="me-3" name="location"  [(ngModel)]="item.loc"  id="select2" name = "general" placeholder="Gender">
+                <option selected>India</option>
+                <option value="1">Other</option>
+            </select> 
+            <select type="select" class="me-3" [(ngModel)]="item.prefer" name="prefer"  id="select3" name = "general" placeholder="Gender">
+                <option selected>No Preference</option>
+                <option value="1">Lower</option>
+                <option value="4">Upper</option>
+                <option value="5">Middle</option>
+                <option value="5">Side Upper</option>
+                <option value="5">Side Lower</option>
+            </select> 
+           
+        </form>
+        
+    </div>
+    <p *ngIf = "isPassengersFull">only 6 passengers are allowed</p>
+    
+    <div class="row mt-2">
+       <p (click)="addForm()">+ Add Passenger</p>
+    </div> 
+</div>
+
+<div class="row mt-3 mx-2" id="conDet">
+    <h5>Contact Details</h5>
+    <p>(Ticket details will be sent to your email and registered mobile number)</p>
+    <div class="row mt-2">
+        <div class="form-group">
+            <input id="numPre" type="text" placeholder="+91">
+            <input  type="text">
+        </div>
+    </div>
+</div>
+<div class="row mt-3 mx-2" id="payMode">
+    <h5>Payment Mode</h5>
+    <div class="col-md-10 mt-3">
+    <input type="radio" id="pM1">
+    <label for="pM1" class="px-1"> Pay through Credit & Debit Cards/ Net Banking /Wallets/Bharat QR/Rewards and Other</label><br>
+    <small class="px-3">convenience Fees: Rs.15 + GST</small></div>
+    <div class="row">
+    <div class="col-md-10">
+    <input type="radio" id="pM2">
+    <label for="pM2" class="px-1"> Pay through BHIM/UPI </label><br>
+    <small class="px-3">convenience Fees: Rs.10 + GST</small></div></div>
+</div>
+<div class="row  mt-4 px-1 d-flex justify-content-start">
+    <div class="col-md-6"><button class="btn" id="basCancelBtn">Cancel</button></div>
+    <div class="col-md-6"><button class="btn" id="basContBtn" >Continue<i class="fa-solid fa-arrow-right fa-lg px-1"></i></button></div>
+</div>
+</div>
+<app-footer-contact></app-footer-contact>

@@ -1,0 +1,39 @@
+#contact{
+    background: linear-gradient(to right, #2C215D, #9B4B90);
+ }
+ #social div{
+     height: 50px;
+     width: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     color: white;
+ }
+ #social #fb{
+     background-color: #4867AA;
+ }
+ #social #yt{
+     background-color: #FF0000;
+ }
+ #social #ig{
+     background-color: #2E5E86;
+ }
+ #social #lin{
+     background-color: #0270AD;
+ }
+ #social #tg{
+     background-color: #29A2E0;
+ }
+ #social #pt{
+     background-color: #C51F26;
+ }
+ #social #tum{
+     background-color: #3C576C;
+ }
+ #social #kapp{
+     background-color: #F7BB19;
+ }
+ #social #tw{
+     background-color: #4C9BE5;
+ }

@@ -1,0 +1,53 @@
+#trndetInPassDet{
+    border: 1px solid black;
+    padding: 20px;
+}
+h5{
+    color: #213D77;
+}
+#passDet{
+    border: 1px solid black;
+    padding: 20px;
+}
+#passDet select{
+    width: 200px;
+    height: 30px;
+}
+#passDet p{
+    color: #213D77;
+    font-weight: bold;
+}
+#conDet{
+    border: 1px solid black;
+    padding: 20px;
+}
+#conDet #numPre{
+    width: 40px;
+
+}
+#payMode{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#basContBtn{
+    background-color: #FB792B;
+    color: white;
+    width: 130px;
+    height: 45px;
+    font-size: medium;
+    font-weight: bold;
+}
+#basCancelBtn{
+    border: 2px solid rgb(226, 221, 221);
+    width: 100px;
+    height: 45px;
+    font-size: medium;
+    font-weight: 500;
+    margin-left: 500px;
+}
+#basCancelBtn:hover{
+    border: 2px solid #FB792B;
+    background-color: #E6E6E6;
+    
+}
