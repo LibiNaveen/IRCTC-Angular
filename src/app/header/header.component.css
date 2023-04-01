@@ -8,9 +8,11 @@ marquee{
 }
 
 #nav-header{
-    font-size: 11px;
+    font-size: 16px;
     display: flex;
-    font-weight: 500;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #213D77 ;
    
 }
 #button{
@@ -24,4 +26,9 @@ marquee{
     font-weight: 700;
     font-size: 12px;
    
+}
+#clock{
+    margin-top: 8px;
+    color: black;
+
 }

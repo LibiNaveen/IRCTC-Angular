@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 })
 export class AuthServiceService {
 
-  users = [{ id: 0, name: 'demo', email: 'demo@gmail.com', password: 'demo' }];
+  users = [{ id: 1, name: 'demo', email: 'demo@gmail.com', password: 'demo' }];
   loggedInUser = { id: -1, name: '', email: '', password: '' };
 
   constructor(private router: Router) {}
@@ -22,9 +22,9 @@ export class AuthServiceService {
     sessionStorage.setItem('token', token.toString());
   }
 
-  removeToken() {
-    sessionStorage.removeItem('token');
-  }
+  // removeToken() {
+  //   sessionStorage.removeItem('token');
+  // }
 
   canAccess() {
     if (this.isAuthenticated()) {

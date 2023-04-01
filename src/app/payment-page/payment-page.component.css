@@ -1,0 +1,27 @@
+.container-fluid{
+    width: 99%;
+}
+#paymCol{
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 40px ;
+    margin-left: 20px;
+    margin-bottom: 40px ;
+}
+#paymCol h5{
+    color:#213D77;
+}
+#paymCol table, th, td{
+    border: 2px solid #213D77 ;
+    padding: 5px;
+   
+}
+#paymCol table th, td{
+   text-align: center;
+}
+#amount button{
+    color: white;
+    background-color: #FB792B;
+    font-weight: bold;
+    
+}

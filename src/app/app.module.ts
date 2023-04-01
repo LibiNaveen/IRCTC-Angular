@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 import { PassengerdetailsComponent } from './passengerdetails/passengerdetails.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { EndPageComponent } from './end-page/end-page.component';
+import { PaymentPageComponent } from './payment-page/payment-page.component';
 
 
 
@@ -38,7 +39,8 @@ import { EndPageComponent } from './end-page/end-page.component';
     BookingDetailsComponent,
     PassengerdetailsComponent,
     ContactUsComponent,
-    EndPageComponent
+    EndPageComponent,
+    PaymentPageComponent
   ],
   imports: [
     BrowserModule,

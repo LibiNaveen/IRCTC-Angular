@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { InputDetailsService } from '../input-details.service';
+import { PassengerDetailsService } from '../passenger-details.service';
 
 @Component({
   selector: 'app-passengerdetails',
@@ -24,7 +25,7 @@ export class PassengerdetailsComponent {
     }
   ];
 
-  constructor(private details: InputDetailsService) { }
+  constructor(private details: InputDetailsService,private passenger:PassengerDetailsService) { }
 
   ngOnInit() {
     this.fromPlace = this.details.getFrom();
@@ -47,8 +48,12 @@ export class PassengerdetailsComponent {
       loc: '',
       prefer: ''
     })
-    console.log(this.passengerForm);
+    
   }
 
+ setPassenger(){
+ this.passenger.setPassengerDetails(this.passengerForm)
+ console.log(this.passengerForm);
+}
 
 }

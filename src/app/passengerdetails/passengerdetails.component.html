@@ -5,22 +5,22 @@
 <div class="row mt-3 mx-2">
     <div class="col-md-4">
         <div class="d-flex justify-content-start">
-            <div><b><span>09:30</span>&nbsp;|&nbsp;<span id="fromPlace">{{fromPlace}}</span>&nbsp;|&nbsp;<span id="dayDate">{{date}}</span></b></div>
+            <div><h4><span>09:30</span>&nbsp;|&nbsp;<span id="fromPlace">{{fromPlace}}</span>&nbsp;|&nbsp;<span id="dayDate">{{date}}</span></h4></div>
         </div>
     </div>
     <div class="col-md-2">
         <div class="d-flex justify-content-center">
-            <p>_____03:00_____</p>
+            <p><b>_____03:00_____</b></p>
         </div>
     </div>
     <div class="col-md-4">
         <div class="d-flex justify-content-end">
-            <div><b><span>12:30</span>&nbsp;|&nbsp;<span id="toPlace">{{toPlace}}</span>&nbsp;|&nbsp;<span id="dayDate">{{date}}</span></b></div>
+            <div><h4><span>12:30</span>&nbsp;|&nbsp;<span id="toPlace">{{toPlace}}</span>&nbsp;|&nbsp;<span id="dayDate">{{date}}</span></h4></div>
         </div>
     </div>
 </div>
 <div class="row mt-3 ">
-   <small> {{classes}}|{{general}}</small>
+   <small style="padding-left: 600px;"> {{classes}}|{{general}}</small>
 </div>
 </div>
 
@@ -83,7 +83,7 @@
 </div>
 <div class="row  mt-4 px-1 d-flex justify-content-start">
     <div class="col-md-6"><button class="btn" id="basCancelBtn">Cancel</button></div>
-    <div class="col-md-6"><button class="btn" id="basContBtn" >Continue<i class="fa-solid fa-arrow-right fa-lg px-1"></i></button></div>
+    <div class="col-md-6"><button class="btn" id="basContBtn" routerLink="/payment" (click)="setPassenger()" >Continue<i class="fa-solid fa-arrow-right fa-lg px-1"></i></button></div>
 </div>
 </div>
 <app-footer-contact></app-footer-contact>

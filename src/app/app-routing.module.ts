@@ -8,6 +8,7 @@ import { RegisterAddressComponent } from './register-address/register-address.co
 import { RegisterBasicComponent } from './register-basic/register-basic.component';
 import { RegisterPersonalComponent } from './register-personal/register-personal.component';
 import { RegisterComponent } from './register/register.component';
+import { PaymentPageComponent } from './payment-page/payment-page.component';
 
 const routes: Routes = [
   { path: '', component: IndexComponent },
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: 'address', component: RegisterAddressComponent },
   { path: 'personal', component: RegisterPersonalComponent },
   { path: 'passDetail', component: PassengerdetailsComponent },
+  { path: 'payment', component:PaymentPageComponent  },
+
 
 
 

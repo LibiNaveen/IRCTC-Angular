@@ -24,5 +24,8 @@ export class RegisterBasicComponent {
     if (userId) {
       this.router.navigate(['/login']);
     }
+    console.log(this.formData)
+    console.log(userId)
+
   }
 }

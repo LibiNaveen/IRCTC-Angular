@@ -1,0 +1,33 @@
+
+
+<div class="container-fluid" >
+    <div id="paymCol">
+    <h5>Payment Details</h5>
+    <table>
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>PREFERENCE</th>
+            <th>COUNTRY</th>
+
+
+        </tr>
+       
+        <tr *ngFor="let item of passengerForm">
+            <td>{{item.name}}<td>
+            <td>{{item.age}}</td>
+            <td>{{item.gender}}</td>
+            <td>{{item.prefer}}</td>
+            <td>{{item.loc}}</td>
+        </tr>
+   
+</table>
+    </div>
+    <div class="row mb-4" id="amount">
+        <div class="col-md-6 d-flex justify-content-end mt-3"> <p><b>Total Amount :</b></p> </div>
+        <div class="col-md-6 d-flex justify-content-start "> 
+            <button class="btn  ">Rs.{{amount}} <br> Book Now</button> 
+        </div>
+    </div>
+</div>

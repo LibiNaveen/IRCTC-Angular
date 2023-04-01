@@ -3,9 +3,9 @@
     <small>Please use a valid E-mail ID and mobile number in registration.</small>
 
     <form class="form" id="regBasic">
-        <input class="form-control mt-4" id="regUserName" type="text" placeholder="User Name" [(ngModel)]="formData.name">
+        <input class="form-control mt-4" id="regUserName" type="text" placeholder="User Name" name="username" [(ngModel)]="formData.name">
         <p id="alert"></p>
-        <input class="form-control mt-4" id="regPassword" type="password" placeholder="password" [(ngModel)]="formData.password">
+        <input class="form-control mt-4" id="regPassword" type="password" placeholder="password" name="password" [(ngModel)]="formData.password">
         <p id="alert"></p>
         <input class="form-control mt-4"  id="regConfirmPassword" type="password" placeholder="Confirm password">
         <p id="alert"></p>
